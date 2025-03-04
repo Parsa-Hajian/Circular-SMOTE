@@ -1,3 +1,7 @@
+![undersampling_oversampling](https://github.com/user-attachments/assets/845e8563-f2ea-4d67-afbe-39c5c51cc128)
+![smote_visualization](https://github.com/user-attachments/assets/e5758815-b7b1-42b2-b3e0-7097b94ae4eb)
+![example_k4](https://github.com/user-attachments/assets/e3e3fadd-1d53-47e1-ba7f-37374461e9ea)
+![circular_smote_circle](https://github.com/user-attachments/assets/cc633eea-7caa-496b-8292-e2023f4b27bc)
 # Circular SMOTE
 
 **Table of Contents**
@@ -13,7 +17,7 @@
 
 In many real-world classification problems, one class (the **majority class**) has far more samples than the other (the **minority class**). This imbalance can cause machine learning models to be biased toward predicting the majority class.
 
-![Undersampling vs Oversampling](./docs/undersampling_oversampling.png)
+![Undersampling vs Oversampling](undersampling_oversampling.png)
 
 In the figure above:
 - **Left**: An illustration of **undersampling**. We discard some majority samples to match the minority class size.
@@ -27,7 +31,7 @@ Both methods aim to rebalance the dataset so that classifiers do not overlook th
 
 The simplest form of oversampling just duplicates existing minority samples. However, **SMOTE (Synthetic Minority Over-sampling Technique)** creates new synthetic samples by “interpolating” between existing minority points, which often provides more variety than just copying.
 
-![SMOTE Visualization](./docs/smote_visualization.png)
+![SMOTE Visualization](smote_visualization.png)
 
 - **Green point**: A minority sample in Class 2.  
 - **Red point**: Another minority sample in Class 2.  
@@ -41,7 +45,7 @@ SMOTE typically improves performance compared to naive oversampling, but it may 
 
 **Circular SMOTE** builds on SMOTE’s idea but **samples in a circular (or hyperspherical) region** rather than just the straight line between two points. Below is a simplified 2D illustration:
 
-![Circular SMOTE Illustration](./docs/circular_smote_circle.png)
+![Circular SMOTE Illustration](circular_smote_circle.png)
 
 1. **Identify two existing minority samples** (shown in **green** and **red**).  
 2. **Draw a circle** around them (blue circle) such that the circle’s center is halfway between these two points.  
@@ -55,7 +59,7 @@ This approach can generate a **wider variety** of new samples, which may lead to
 
 When using SMOTE-based methods, each minority sample typically selects one neighbor out of its \(k\)-nearest neighbors. Here’s a conceptual diagram of **k=4**:
 
-![Example with k=4](./docs/example_k4.png)
+![Example with k=4](example_k4.png)
 
 - **X1** is our current minority sample.
 - **X11**, **X12**, **X13**, and **X14** are the 4 nearest neighbors.
