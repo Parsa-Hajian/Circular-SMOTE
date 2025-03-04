@@ -1,7 +1,3 @@
-![undersampling_oversampling](https://github.com/user-attachments/assets/845e8563-f2ea-4d67-afbe-39c5c51cc128)
-![smote_visualization](https://github.com/user-attachments/assets/e5758815-b7b1-42b2-b3e0-7097b94ae4eb)
-![example_k4](https://github.com/user-attachments/assets/e3e3fadd-1d53-47e1-ba7f-37374461e9ea)
-![circular_smote_circle](https://github.com/user-attachments/assets/cc633eea-7caa-496b-8292-e2023f4b27bc)
 # Circular SMOTE
 
 **Table of Contents**
