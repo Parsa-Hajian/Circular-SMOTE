@@ -1,4 +1,4 @@
-# Circular SMOTE: A Visual Explanation
+# Circular SMOTE
 
 **Table of Contents**
 1. [Overview of Imbalanced Data](#overview-of-imbalanced-data)
